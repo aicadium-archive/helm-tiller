@@ -1,8 +1,8 @@
-ARG HELM_VERSION=2.13.0
+ARG HELM_VERSION=2.14.0
 
 FROM alpine/helm:${HELM_VERSION}
 
-ARG HELM_VERSION=2.13.0
+ARG HELM_VERSION=2.14.0
 
 RUN apk add --update --no-cache curl libressl ca-certificates \
     && helm init --client-only \
